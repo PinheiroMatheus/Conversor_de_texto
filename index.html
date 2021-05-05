@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./resposive.css">
+
+    <title>Conversor de texto</title>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <h1>Conversor de texto</h1>
+            <div class="text-input">
+                <form id="formulario">
+                    <div class="input">
+                        <textarea cols="50" rows="15" id="campo" placeholder="Digite seu texto"></textarea>
+                    </div>
+
+                    <div class="input">
+                        <textarea cols="50" rows="15" name="resultado" id="resultado" placeholder="Copie seu texto"></textarea>
+                        <button id="copiar">Copiar texto</button>
+                    </div>
+
+                    <h2>Com que tipo de letra quer seu texto?</h2>
+
+                    <input class="maiuscula" type="submit" id="maiuscula" value="MAIÚSCULA" onclick="upperConverter()">
+                    <input class="minuscula" type="submit" id="minuscula" value="minúscula" onclick="lowerConverter()">
+                    <input class="prim_maius" type="submit" id="prim_maius" value="Primeira Maiúscula" onclick="CapitalizeConverter()">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
