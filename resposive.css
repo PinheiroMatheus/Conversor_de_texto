@@ -1,4 +1,7 @@
 @media screen and (max-width: 800px) {
+    main {
+        height: 100%;
+    }
     .text-input form {
         display: flex;
         flex-direction: column;
